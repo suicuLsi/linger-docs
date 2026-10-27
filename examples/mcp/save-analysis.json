@@ -1,0 +1,15 @@
+{
+  "jsonrpc": "2.0",
+  "id": 4,
+  "method": "tools/call",
+  "params": {
+    "name": "save_analysis",
+    "arguments": {
+      "asset_id": 1,
+      "expected_revision": 0,
+      "tags": ["warm light", "wooden furniture"],
+      "description": "Illustrative example only: warm window light falls across wooden furniture.",
+      "producer": "example-client (illustrative)"
+    }
+  }
+}

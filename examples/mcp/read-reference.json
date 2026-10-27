@@ -1,0 +1,29 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "tools/call",
+    "params": {
+      "name": "list_inspirations",
+      "arguments": { "query": "warm light", "limit": 5 }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+      "name": "get_inspiration",
+      "arguments": { "asset_id": 1 }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+      "name": "view_inspiration",
+      "arguments": { "asset_id": 1 }
+    }
+  }
+]
