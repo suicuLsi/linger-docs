@@ -1,0 +1,3 @@
+[mcp_servers.linger]
+command = "/Applications/Linger.app/Contents/MacOS/linger-service"
+args = ["--mcp", "--allow-write"]

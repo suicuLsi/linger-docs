@@ -1,33 +1,31 @@
 # Data and privacy
 
-This is a technical overview of the current design, checked on October 28, 2026. It is not a substitute for the privacy terms presented on the website or in the application.
+Linger is a native Mac app with an AppKit and SwiftUI interface and a shared Rust core. It keeps your reference library on your Mac. See [product and availability](product.md) for the supported Macs, public download, and trial.
 
 ## Your local library
 
-Linger stores library records locally in SQLite. Imported files are copied into a managed library; importing does not modify the original source file. Stored notes, tags, and source links supply context for finding a reference again.
+Linger stores library records locally in SQLite. It copies imported files into the managed library and leaves external source files in place. Notes, tags, source links, and project canvases are saved locally. Each Mac has a separate library, with no built-in cloud sync or shared cloud library.
 
-Moving an item to the library's trash is recoverable. Permanently removing it can remove Linger's managed copy, preview, and record; it must not remove the original external source file. Keep an independent backup of valuable material: local storage alone is not a backup strategy.
+Moving an item to the library's trash is recoverable. Permanently removing it can remove the managed copy, preview, and record. The original file outside the library is left untouched. Back up the library separately if you want a copy outside that Mac.
 
 ## Personal words and machine observations
 
-Personal notes and tags are stored separately from machine analysis. An analysis update appends a revision instead of replacing what the user wrote. User corrections to machine tags are also preserved separately from the original generated analysis.
+Linger stores personal notes and tags separately from machine analysis. An analysis update appends a revision. User corrections to machine tags are preserved separately from generated analysis.
 
-A proposed aesthetic term remains a suggestion with supporting references. It is not automatically treated as the user's preference. Read the [design note](personal-notes-and-ai.md) for the reasoning behind this distinction.
+An aesthetic vocabulary entry is a suggestion with supporting references. Read the [design note](personal-notes-and-ai.md) for how Linger distinguishes suggestions from a user's stated preferences.
 
 ## When content can leave the device
 
-AI processing is optional and starts disabled. If you enable an external model API, Codex, or an external MCP agent, the text and image previews needed for the authorized task can be sent to that client or provider. Its account, retention, and data-use terms apply. A local MCP connection does not imply local model inference.
+Core browsing and saved-text search use local data. AI processing is optional and starts disabled. When you enable an external model API, Codex, or an external MCP agent, text and previews needed for the task may be sent to that client or model provider. Its account, retention, and data-use terms apply. The client connects to Linger over local stdio and can use a remote model for inference.
 
-MCP access is read-only unless write tools are explicitly enabled. Read-only access can still reveal retrieved content to the connected client, so scope requests to the collection or items you intend to share. The interface does not offer arbitrary file reads, SQL access, or library deletion tools.
+The [MCP server](mcp.md) defaults to read-only. Reading can expose the retrieved text or preview to the connected client, so request only the items needed for the task. The server provides a defined set of tools without arbitrary file access, SQL, or deletion.
 
-On macOS, user-supplied API credentials are stored in the system Keychain rather than as readable keys in the library database. This is not a claim that all library files are encrypted by Linger.
+Linger stores BYOK API credentials in the macOS Keychain. Library files and previews use separate local storage.
 
 ## Accounts and licensing
 
-The current private candidate requires email sign-in for account, trial, and license management. These services use the network and are separate from library storage. Signing out clears the local session and closes library access; it does not delete the library.
-
-Offline access depends on an already signed-in account and a valid cached entitlement. First sign-in and external model requests require connectivity. This page does not promise unrestricted offline access or cloud backup.
+Email sign-in, trial activation, and license management use online services separate from library storage. Offline use relies on an already signed-in account and its cached entitlement. Signing out clears the local session while retaining the library files. After a trial expires, existing content remains available for browsing, basic search, and export. See [desktop trial and license data](https://withlinger.com/privacy/) and [pricing and licenses](https://withlinger.com/pricing/).
 
 ## Public examples
 
-The examples in this repository use fictional IDs and synthetic descriptions. The demo screenshot uses the website's curated museum sample content. No private library export or customer data is included.
+The MCP requests in this repository use fictional IDs and descriptions. The [demo screenshot](demo-and-sources.md) shows curated museum reference content. The benchmark pages publish aggregate measurements and link to the official anonymized Recall ranks.
