@@ -19,4 +19,4 @@ Changing the thumbnail decode limit from 1024 px to 384 px reduced host peak RSS
 - RSS compares thumbnail sizes inside one native host. WKWebView's separate WebContent, GPU, and Networking processes make host RSS insufficient for a cross-stack memory comparison.
 - Repeated references stress the number of UI items while keeping the underlying corpus at 169 images. They cannot establish capacity or indexing performance for 5,000 unique files.
 
-[Native migration release notes](https://withlinger.com/changelog/#v0-6-0) · [Native architecture article](https://withlinger.com/resources/why-we-built-native-mac-app/) (URL returned HTTP 404 on November 20, 2026)
+[Native migration release notes](https://withlinger.com/changelog/#v0-6-0) · [Native architecture article](https://withlinger.com/resources/why-we-built-native-mac-app/)

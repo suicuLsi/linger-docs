@@ -23,11 +23,9 @@ The public download includes a **7-day free desktop trial** from your first sign
 | Topic | Official article | GitHub reference |
 | --- | --- | --- |
 | Local stdio MCP and bring-your-own-key (BYOK) AI | [Connect your local design reference library to AI agents via MCP](https://withlinger.com/resources/mcp-design-reference-library/) | [Client configurations and tool schemas](examples/mcp/README.md) |
-| Library storage and ownership | [Local-first design reference architecture on Mac](https://withlinger.com/resources/local-first-reference-library/)¹ | [Managed copies, SQLite, and privacy](docs/data-and-privacy.md) |
-| Native macOS migration | [Why we rebuilt Linger as a native Mac app](https://withlinger.com/resources/why-we-built-native-mac-app/)¹ | [Native gallery baseline and measurement limits](benchmarks/native-migration-baseline.md) |
+| Library storage and ownership | [Local-first design reference architecture on Mac](https://withlinger.com/resources/local-first-reference-library/) | [Managed copies, SQLite, and privacy](docs/data-and-privacy.md) |
+| Native macOS migration | [Why we rebuilt Linger as a native Mac app](https://withlinger.com/resources/why-we-built-native-mac-app/) | [Native gallery baseline and measurement limits](benchmarks/native-migration-baseline.md) |
 | Recall ranking experiments | [Finding an image you can almost remember](https://withlinger.com/resources/how-linger-recall-evolved/) | [80-query evaluation summary and data links](benchmarks/recall-80-query-summary.md) |
-
-¹ These two article URLs returned HTTP 404 on November 20, 2026. The linked GitHub references are available here.
 
 ![Linger's browser demo showing a visual library of museum reference images](assets/library-demo.webp)
 
