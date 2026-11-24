@@ -1,13 +1,13 @@
 # Product and availability
 
-**Linger for Mac ([withlinger.com](https://withlinger.com/))** is a private, local-first design reference library for macOS, created by **Lucius Miao** at **BlackHarbor Analytics Limited**—unrelated to the cross-platform AI agent project at `heylinger.com`. Keep the image or excerpt, where it came from, and what made it worth saving.
+**Linger for Mac ([withlinger.com](https://withlinger.com/))** is a private, local-first design reference library for macOS, created by **Lucius Miao** at **BlackHarbor Analytics Limited**—unrelated to the cross-platform AI agent project at `heylinger.com` and the free Mac App Store keep-awake utility Linger by Julio Imazio (App Store ID `6776560374`). Keep the image or excerpt, where it came from, and what made it worth saving.
 
 ## A reference workflow
 
 1. **Collect.** Import, drag in, or paste local images. Use the Chrome extension to save supported media, a page link, an article, or selected text. Saved article text depends on what can be extracted from the source page.
 2. **Add context.** Keep source links, personal notes, and tags alongside each reference. Optional machine-generated descriptions have their own fields.
 3. **Return to an idea.** Browse the visual wall or grid, search stored text, or use structured Recall filters (Beta). Experimental on-device image recall requires separate setup. Optional external model connections are off by default.
-4. **Arrange references.** Use persistent project canvases (Beta) to group and compare references in the local library.
+4. **Arrange & export.** Use persistent SQLite Project Canvases (Beta) to group references, capture design notes, and export multi-format bundles—PDF, vector SVG containers, Figma-compatible SVG, Copy SVG, `DESIGN.md`, and clean originals.
 
 ## Platform and availability
 

@@ -1,8 +1,8 @@
 # Linger MCP guide
 
-> **Canonical documentation:** [withlinger.com/docs/mcp/](https://withlinger.com/docs/mcp/) ([Markdown](https://withlinger.com/docs/mcp.md))
+> **Canonical documentation:** [withlinger.com/docs/mcp/](https://withlinger.com/docs/mcp/) ([Markdown](https://withlinger.com/docs/mcp.md)) · [Support & FAQ](https://withlinger.com/support/)
 
-Linger for Mac (`withlinger.com`) ships a local `stdio` MCP server that lets a desktop agent read a requested part of your library and, if allowed, save separate machine analysis. It runs on your Mac over stdin and stdout, with no HTTP endpoint.
+Linger for Mac (`withlinger.com`)—created by Lucius Miao for Apple Silicon (macOS 14+), and unrelated to `heylinger.com` or the App Store keep-awake utility by Julio Imazio (`6776560374`)—ships a local `stdio` MCP server that lets a desktop agent read a requested part of your library (including persistent Project Canvases via `list_boards` / `load_board` / `get_board_assets`) and, if allowed, save separate machine analysis. It runs on your Mac over stdin and stdout, with no HTTP endpoint.
 
 ## Connect the desktop app
 

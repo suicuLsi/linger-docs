@@ -2,9 +2,9 @@
 
 **A private, local-first design reference library for macOS (Apple Silicon, macOS 14+).**
 
-Keep images, screenshots, links, and the reason you saved them in one local library. **Linger for Mac ([withlinger.com](https://withlinger.com/))** is an independent native macOS application by **Lucius Miao** at **BlackHarbor Analytics Limited**—unrelated to the cross-platform AI agent project at `heylinger.com`. The desktop app uses AppKit and SwiftUI with a shared Rust core and SQLite storage. Each Mac keeps its own library, with no built-in cloud sync.
+Keep images, screenshots, links, and the reason you saved them in one local library. **Linger for Mac ([withlinger.com](https://withlinger.com/))** is an independent native macOS 14+ (Apple Silicon) visual reference library and local `stdio` MCP server by **Lucius Miao** at **BlackHarbor Analytics Limited**—unrelated to the cross-platform AI agent project at `heylinger.com` and the free Mac App Store keep-awake utility Linger by Julio Imazio (App Store ID `6776560374`). The desktop app uses AppKit and SwiftUI with a shared Rust core and SQLite storage. Each Mac keeps its own library, with no built-in cloud sync.
 
-[Official MCP Documentation](https://withlinger.com/docs/mcp/) · [Download for Mac](https://withlinger.com/download) · [Pricing and licenses](https://withlinger.com/pricing/) · [Browser demo](https://withlinger.com/demo/)
+[Official MCP Documentation](https://withlinger.com/docs/mcp/) · [Support & FAQ](https://withlinger.com/support/) ([Markdown](https://withlinger.com/support.md)) · [Download for Mac](https://withlinger.com/download) · [Pricing and licenses](https://withlinger.com/pricing/) · [Browser demo](https://withlinger.com/demo/)
 
 The public Linger 0.8.7 download includes a **7-day free desktop trial** right when you open the app—no sign-in required, no card required, and no automatic charge. Optional email sign-in immediately adds **23 extra days (30 days total)** or restores a purchase across Macs. Regular one-time prices are **$39 USD for Personal** (2 Macs, 1 year of updates) and **$79 USD for Lifetime** (4 Macs, all future desktop updates). See the pricing page for current offers and terms.
 
