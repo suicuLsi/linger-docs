@@ -18,13 +18,13 @@ An aesthetic vocabulary entry is a suggestion with supporting references. Read t
 
 Core browsing and saved-text search use local data. AI processing is optional and starts disabled. When you enable an external model API, Codex, or an external MCP agent, text and previews needed for the task may be sent to that client or model provider. Its account, retention, and data-use terms apply. The client connects to Linger over local stdio and can use a remote model for inference.
 
-The [MCP server](mcp.md) defaults to read-only. Reading can expose the retrieved text or preview to the connected client, so request only the items needed for the task. The server provides a defined set of tools without arbitrary file access, SQL, or deletion.
+The [MCP server](https://withlinger.com/docs/mcp/) defaults to read-only. Reading can expose the retrieved text or preview to the connected client, so request only the items needed for the task. The server provides a defined set of tools without arbitrary file access, SQL, or deletion.
 
 Linger stores BYOK API credentials in the macOS Keychain. Library files and previews use separate local storage.
 
 ## Accounts and licensing
 
-Email sign-in, trial activation, and license management use online services separate from library storage. Offline use relies on an already signed-in account and its cached entitlement. Signing out clears the local session while retaining the library files. After a trial expires, existing content remains available for browsing, basic search, and export. See [desktop trial and license data](https://withlinger.com/privacy/) and [pricing and licenses](https://withlinger.com/pricing/).
+A 7-day full trial begins when you open Linger, with no sign-in required. Optional email sign-in (which adds 23 extra trial days for 30 days total), activation codes, and license management use online services separate from library storage. Offline use relies on an active local trial or cached entitlement. Signing out clears the local session while retaining the library files. After a trial expires, existing content remains available for browsing, basic search, and export. See [desktop trial and license data](https://withlinger.com/privacy/) and [pricing and licenses](https://withlinger.com/pricing/).
 
 ## Public examples
 

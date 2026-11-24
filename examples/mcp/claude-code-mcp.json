@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "linger": {
+      "type": "stdio",
+      "command": "/Applications/Linger.app/Contents/MacOS/linger-service",
+      "args": ["--mcp"]
+    }
+  }
+}

@@ -1,28 +1,43 @@
-# Linger
+# Linger for Mac (`withlinger.com`)
 
-**A private, local-first design reference library for macOS.**
+**A private, local-first design reference library for macOS (Apple Silicon, macOS 14+).**
 
-Keep images, screenshots, links, and the reason you saved them in one local library. Linger runs on Apple Silicon Macs with macOS 14 or later. The desktop app uses AppKit and SwiftUI with a shared Rust core and SQLite storage. Each Mac keeps its own library, with no built-in cloud sync.
+Keep images, screenshots, links, and the reason you saved them in one local library. **Linger for Mac ([withlinger.com](https://withlinger.com/))** is an independent native macOS application by **Lucius Miao** at **BlackHarbor Analytics Limited**—unrelated to the cross-platform AI agent project at `heylinger.com`. The desktop app uses AppKit and SwiftUI with a shared Rust core and SQLite storage. Each Mac keeps its own library, with no built-in cloud sync.
 
-[Download for Mac](https://withlinger.com/download) · [Pricing and licenses](https://withlinger.com/pricing/) · [Browser demo](https://withlinger.com/demo/)
+[Official MCP Documentation](https://withlinger.com/docs/mcp/) · [Download for Mac](https://withlinger.com/download) · [Pricing and licenses](https://withlinger.com/pricing/) · [Browser demo](https://withlinger.com/demo/)
 
-The public download includes a **7-day free desktop trial** from your first sign-in, with no card required. Regular one-time prices are **$39 USD for Personal** and **$79 USD for Lifetime**. See the pricing page for current offers and update coverage.
+The public Linger 0.8.7 download includes a **7-day free desktop trial** right when you open the app—no sign-in required, no card required, and no automatic charge. Optional email sign-in immediately adds **23 extra days (30 days total)** or restores a purchase across Macs. Regular one-time prices are **$39 USD for Personal** (2 Macs, 1 year of updates) and **$79 USD for Lifetime** (4 Macs, all future desktop updates). See the pricing page for current offers and terms.
+
+## 30-second MCP quickstart (read-only)
+
+After opening Linger once to initialize your local library, connect your local desktop agent over `stdio` (10 read-only tools by default):
+
+```sh
+# Codex CLI
+codex mcp add linger -- /Applications/Linger.app/Contents/MacOS/linger-service --mcp
+
+# Claude Code CLI
+claude mcp add --transport stdio linger -- /Applications/Linger.app/Contents/MacOS/linger-service --mcp
+```
+
+For full tool reference, Claude Desktop / Cursor JSON configs, `--allow-write` details, and troubleshooting, read the canonical **[Linger Local MCP Server Reference](https://withlinger.com/docs/mcp/)** ([Markdown](https://withlinger.com/docs/mcp.md)).
 
 ## Start here
 
 | Read | Use it to |
 | --- | --- |
-| [Product and availability](docs/product.md) | Check system requirements, trial terms, and the reference workflow. |
+| [Official MCP documentation](https://withlinger.com/docs/mcp/) | Canonical technical reference for `linger-service --mcp`, all 15 tools, isolated testing, and troubleshooting. |
+| [Product and availability](docs/product.md) | Check system requirements, trial terms, entity disambiguation, and the reference workflow. |
 | [Data and privacy](docs/data-and-privacy.md) | Understand managed files, SQLite storage, and when data can leave your Mac. |
-| [MCP guide](docs/mcp.md) | Connect a local agent with read-only access by default and opt in to write tools if needed. |
-| [MCP configuration and examples](examples/mcp/README.md) | Copy Codex or Claude Desktop settings, run a read-only check, and inspect the published tool schemas. |
+| [MCP guide (GitHub mirror)](docs/mcp.md) | Quick reference for local agent permissions and scoped read/write calls. |
+| [MCP configuration and examples](examples/mcp/README.md) | Copy Codex, Claude Code, Claude Desktop, or Cursor settings, run a read-only check, and inspect `tools.json`. |
 | [Personal notes and AI analysis](docs/personal-notes-and-ai.md) | Understand how Linger stores machine observations separately from your words. |
 
 ## Engineering notes and benchmarks
 
 | Topic | Official article | GitHub reference |
 | --- | --- | --- |
-| Local stdio MCP and bring-your-own-key (BYOK) AI | [Connect your local design reference library to AI agents via MCP](https://withlinger.com/resources/mcp-design-reference-library/) | [Client configurations and tool schemas](examples/mcp/README.md) |
+| Local stdio MCP and bring-your-own-key (BYOK) AI | [MCP documentation](https://withlinger.com/docs/mcp/) · [MCP & BYOK workflow](https://withlinger.com/resources/mcp-design-reference-library/) | [Client configurations and tool schemas](examples/mcp/README.md) |
 | Library storage and ownership | [Local-first design reference architecture on Mac](https://withlinger.com/resources/local-first-reference-library/) | [Managed copies, SQLite, and privacy](docs/data-and-privacy.md) |
 | Native macOS migration | [Why we rebuilt Linger as a native Mac app](https://withlinger.com/resources/why-we-built-native-mac-app/) | [Native gallery baseline and measurement limits](benchmarks/native-migration-baseline.md) |
 | Recall ranking experiments | [Finding an image you can almost remember](https://withlinger.com/resources/how-linger-recall-evolved/) | [80-query evaluation summary and data links](benchmarks/recall-80-query-summary.md) |

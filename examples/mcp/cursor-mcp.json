@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "linger": {
+      "command": "/Applications/Linger.app/Contents/MacOS/linger-service",
+      "args": ["--mcp"]
+    }
+  }
+}
